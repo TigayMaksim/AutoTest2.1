@@ -26,7 +26,7 @@ public class CallBackTest {
     @BeforeAll
     static void setUpAll() {
         WebDriverManager.chromedriver().setup();
-       
+
 
     }
 
@@ -49,7 +49,7 @@ public class CallBackTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
 
     }
 
